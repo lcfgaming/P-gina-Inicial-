@@ -1,3 +1,4 @@
+/* Mesmos estilos anteriores, com algumas adições */
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +38,7 @@ nav a {
 .hero {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url('background.jpg');
@@ -50,20 +52,40 @@ nav a {
     text-shadow: 0 0 10px #00ffcc;
 }
 
-.neon-btn {
+.hero p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.highlight-link {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.neon-divider {
+    width: 80%;
+    height: 2px;
+    background-color: #666;
+    margin: 40px auto;
+}
+
+.pre-register-btn {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #00ffcc;
+    background-color: #fff;
     color: #000;
     font-weight: bold;
     text-transform: uppercase;
+    border: 2px solid #666;
     border-radius: 30px;
     text-decoration: none;
+    margin-top: 40px;
     transition: box-shadow 0.3s ease;
 }
 
-.neon-btn:hover {
-    box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+.pre-register-btn:hover {
+    box-shadow: 0 0 20px #666, 0 0 30px #666;
 }
 
 .products {
@@ -81,6 +103,7 @@ nav a {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .product {
@@ -98,7 +121,7 @@ nav a {
     margin: 10px 0;
 }
 
-.about, .work-with-us {
+.work-with-us {
     padding: 50px;
     text-align: center;
 }
