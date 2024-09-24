@@ -3,25 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LCF GAMING - Início</title>
-    <link rel="stylesheet" href="style.css">
+    <title>LCF GAMING - Recargas e Produtos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
-        <h1>LCF GAMING</h1>
+        <div class="logo">
+            <h1>LCF GAMING</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Nossos Produtos</a></li>
+                <li><a href="#sobre">Quem Somos</a></li>
+                <li><a href="#trabalhe">Trabalhe Conosco</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Conteúdo Principal -->
-    <section class="main-section">
-        <h2>Bem-vindo ao LCF GAMING!</h2>
-        <p>Participe do pré-registro e fique por dentro das melhores ofertas de Free Fire!</p>
-        <!-- Botão de Pré-Registro -->
-        <a href="https://lcfregistro.netlify.app/" class="button neon">Pré-Registro</a>
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Recargas e Itens de Jogos com Segurança</h2>
+            <a href="#pre-registro" class="btn neon-btn">Faça seu Pré-Registro</a>
+        </div>
     </section>
 
-    <!-- Rodapé -->
+    <section id="produtos" class="products">
+        <h2>Nossos Produtos</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="produto1.jpg" alt="Produto 1">
+                <p>Descrição do Produto 1</p>
+                <a href="https://kiwify.com.br/produto1" class="btn neon-btn">Comprar</a>
+            </div>
+            <div class="product">
+                <img src="produto2.jpg" alt="Produto 2">
+                <p>Descrição do Produto 2</p>
+                <a href="https://kiwify.com.br/produto2" class="btn neon-btn">Comprar</a>
+            </div>
+            <!-- Mais produtos podem ser adicionados aqui -->
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <h2>Quem Somos</h2>
+        <p>LCF GAMING é uma plataforma confiável para recargas e itens de jogos como Free Fire. Nossa missão é fornecer produtos com segurança e rapidez.</p>
+    </section>
+
+    <section id="trabalhe" class="work-with-us">
+        <h2>Trabalhe Conosco</h2>
+        <p>Estamos em busca de novos talentos. <a href="#trabalhe">Envie seu currículo</a>.</p>
+    </section>
+
     <footer>
         <p>&copy; 2024 LCF GAMING. Todos os direitos reservados.</p>
     </footer>
