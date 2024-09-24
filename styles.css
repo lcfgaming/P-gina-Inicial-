@@ -1,22 +1,75 @@
+/* Estilo Global */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
 }
 
+h1, h2, p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Cabeçalho */
 header {
     padding: 20px;
+    border-bottom: 2px solid #666; /* Borda cinza neon */
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%);
+}
+
+header h1 {
+    color: #fff;
+    text-shadow: 0px 0px 8px #666; /* Efeito neon no título */
+}
+
+/* Seção Principal */
+.main-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.main-section h2 {
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 0 0 10px #666; /* Efeito neon cinza no subtítulo */
+}
+
+.main-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Botão Neon */
+.button {
+    padding: 15px 30px;
+    border: 2px solid #666; /* Borda cinza neon */
+    background-color: transparent;
+    font-size: 1.2em;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(102, 102, 102, 0.5); /* Sombra neon */
+}
+
+.button:hover {
+    background-color: #666; /* Efeito de hover neon */
+    color: #000;
+    box-shadow: 0 0 20px #999; /* Efeito de brilho ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    padding: 20px;
+    text-align: center;
     background-color: #111;
-    border-bottom: 2px solid #0ff;
+    border-top: 2px solid #666; /* Borda cinza neon */
 }
 
-h1 {
-    font-size: 3em;
-    color: #0ff;
-    text-shadow: 0 0 10px #0ff;
+footer p {
+    color: #666;
 }
-
-section {
