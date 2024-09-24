@@ -1,4 +1,4 @@
-/* Mesmos estilos anteriores, com algumas adições */
+/* Estilos gerais */
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +21,7 @@ header {
 
 .logo h1 {
     color: #fff;
+    font-size: 1.8rem;
 }
 
 nav ul {
@@ -44,10 +45,11 @@ nav a {
     background-image: url('background.jpg');
     background-size: cover;
     text-align: center;
+    padding: 20px;
 }
 
 .hero h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #fff;
     text-shadow: 0 0 10px #00ffcc;
 }
@@ -110,10 +112,12 @@ nav a {
     background-color: #111;
     padding: 20px;
     border-radius: 10px;
+    max-width: 200px;
+    text-align: center;
 }
 
 .product img {
-    max-width: 200px;
+    max-width: 100%;
     border-radius: 10px;
 }
 
@@ -130,4 +134,52 @@ footer {
     background-color: #111;
     padding: 20px;
     text-align: center;
+}
+
+/* Responsividade para telas menores (celular) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .pre-register-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .product-list {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .product {
+        max-width: 90%;
+    }
+
+    .products {
+        padding: 20px;
+    }
+
+    .neon-divider {
+        width: 90%;
+    }
+
+    footer {
+        padding: 10px;
+    }
 }
